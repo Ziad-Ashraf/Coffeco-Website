@@ -1,0 +1,58 @@
+$main-color: #bc9667;
+$secondary-color: #8a6f4d;
+
+
+.aboutus {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: white;
+    color: black;
+    padding: 60px;
+}
+.aboutus .aboutimage img {
+    width: 675px;
+    margin-left: 60px;
+    border-radius: 7px;
+}
+
+.aboutus .aboutustxt {
+    margin-right: 40px;
+}
+.aboutus .aboutustxt .header {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.aboutus .aboutustxt p {
+    color: #807f7d;
+}
+
+.submit {
+    display: flex;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: $main-color;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 5px;
+    }
+.submit:hover {
+    transition: 0.5s;
+    background-color: $secondary-color;
+}
+
+@media (max-width: 991px) {
+    .aboutus {
+        flex-direction: column;
+    }
+    .aboutus .aboutimage img {
+    width: 300px;
+    margin: auto;
+    border-radius: 7px;
+    }
+    .submit {
+        justify-content: center;
+    }
+}

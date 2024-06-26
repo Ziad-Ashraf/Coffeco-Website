@@ -1,0 +1,29 @@
+$main-color: #bc9667;
+$secondary-color: #8a6f4d;
+
+
+footer {
+    .container {
+        .facebook {
+            background-color: #3b5998;      
+        }
+        .twitter {
+            background-color: black;  
+        }
+        .google {
+            background-color: white;
+        }
+        .instagram {
+            background: linear-gradient(to right, #833ab4,#fd1d1d,#fcb045)
+        }
+        .linkedin {
+            background-color: #0082ca;
+        }
+        .github {
+            background-color: #333333;
+        }
+    }
+    .text {
+        color: $main-color;
+    }
+}

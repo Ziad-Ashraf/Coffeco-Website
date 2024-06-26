@@ -1,0 +1,104 @@
+$main-color: #bc9667;
+
+.products {
+    background-color: white;
+    color: black;
+    padding: 40px;
+.heading {
+    text-align: center;
+    font-weight: bold;
+    }
+.card{
+    transition:0.5s;
+    margin: 10px;
+}
+img {
+    height:320px;
+    width:100%;
+    padding: 10px;
+    background-color: #eee;
+    }
+}
+  div [class^="col-"]{
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    margin: auto 10px;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .details {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+  }
+  .details .order {
+    border: 2px solid $main-color;
+    outline: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 5px;
+  }
+  .details .order:hover {
+    transition: 0.5s;
+    background-color: $main-color;
+    color: white;
+  }
+.details .price {
+    cursor:default;
+    border: 1px solid $main-color;
+    outline: none;
+    color: $main-color;
+    background-color: white;
+    font-weight: bold;
+    padding:5px 20px;
+    border-radius: 5px;
+}
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+  @media (max-width: 991px) {
+    .row {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .row .col-md-6 {
+      flex: 0 0 auto;
+      width: 50%;
+      margin: auto;
+  }
+}
+
+@media (max-width: 725px) {
+  .row .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: auto;
+}
+}

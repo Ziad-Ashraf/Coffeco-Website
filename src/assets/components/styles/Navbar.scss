@@ -1,0 +1,50 @@
+$main-color: #bc9667;
+
+
+.header {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 999999;
+}
+.header-bg {
+    background-color: black;
+}
+.navbar {
+    max-width: 80%;
+    margin: auto;
+.container-fluid .navbar-brand img{
+    width: 100px;
+}
+.container-fluid .navbar-collapse{
+    justify-content: center;
+}
+.container-fluid .navbar-nav .nav-item {
+    border-radius: 3px;
+}
+.container-fluid .navbar-nav .nav-item:hover {
+    background-color: $main-color;
+    transition: 0.5s;
+}
+.container-fluid .navbar-nav .nav-item .nav-link {
+    color: white;
+}
+.container-fluid .icon-list {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    }
+.container-fluid .icon-list a {
+    font-size: 25px;
+    width: 20px;
+    color: white;
+    }
+.container-fluid .icon-list a:hover {
+    transition: 0.5s;
+    color: $main-color;
+    }
+
+}
